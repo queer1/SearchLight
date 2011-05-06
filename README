@@ -1,0 +1,11 @@
+Usage: searchlight [-p path] [-o file] [-f format] [-s] query
+Queries the Spotlight database for the provided path. Default path is current drive.
+-p,--path		A comma-separated list of mounted drives whose Spotlight database are being queried.
+-o,--output		Filename or path of file where output should be redirected.
+-f,--format		Format of query output.  Currently supported formats: CSV.
+-a,--attributes	A comma-separated list of metadata attributes. Returns results in CSV format
+-s,--short		Print only the file name in the results, not the entire file path.
+-c,--count		Print only the number of results returned by the query.
+--version		Current version number.
+Default attributes for formatted files: kMDItemPath,kMDItemFSOwnerUserID,
+kMDItemFSCreationDate,kMDItemFSContentChangeDate
